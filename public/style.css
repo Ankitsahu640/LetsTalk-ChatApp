@@ -1,0 +1,247 @@
+/* ----------------------------------------------------------- */
+/* header */
+/* ----------------------------------------------------------- */
+
+nav{
+    background-color: purple;
+    color: white;
+}
+.container-fluid a{
+    color:white;
+    display: flex;
+}
+.container-fluid a h2{
+    position: relative;
+    top:7px;
+    left: 10px;
+    font-weight: 800;
+}
+nav img{
+    width:60px;
+    height: auto;
+}
+.navtop{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+}
+
+
+/* ----------------------------------------------------- */
+/* messaage conatiner */
+/* ----------------------------------------------------- */
+
+body{
+    height:100%;
+}
+
+main{
+    background-image: linear-gradient(rgb(241, 194, 230),rgb(199, 210, 222));
+    display: block;
+    height:86vh;
+    overflow-y: hidden;
+}
+
+/* ------------------------------------------------------------------- */
+
+.chatbox{
+    display:flex;
+    justify-content:center;
+}
+
+
+
+.onlineInfo{
+    max-width: 300px;
+    background-color: rgb(154, 55, 200);
+    height: 79.6vh;
+    border: 1px solid black;
+    margin: 10px;
+}
+.onlineInside{
+    background-color: rgb(250, 228, 247);
+    height:76.3vh;
+    margin:10px;
+    padding:3px;
+    border: 1px solid rgb(80, 7, 117);
+    border-radius: 10px;
+    overflow: auto;
+    font-family: 'Lato', sans-serif;
+}
+.onlineInside h2 {
+    padding: 10px 20px;
+    font-weight: bolder;
+    color: rgb(2, 2, 54);
+    display: flex;
+}
+.badge {
+    font-size: 14px;
+    background-color: rgb(154, 55, 200);
+    border-radius: 20px;
+    margin: 8px;
+}
+.onlineInside li{
+    margin:10px 0px;
+    font-weight: 700;
+    font-size: larger;
+    color: rgb(146, 40, 196);
+}
+
+
+
+
+.msgbox{
+    background-color: rgb(154, 55, 200);
+    max-width: 1000px;
+    height:fit-content;
+    padding-top: 10px;
+    margin-top:10px;
+    border: 1px solid black;
+}
+.msginside{
+    background-color: rgb(250, 228, 247);
+    max-width: 970px;
+    height:70vh;
+    margin:auto ;
+    padding: 30px 0px;
+    border: 1px solid rgb(80, 7, 117);
+    border-radius: 10px;
+    overflow: auto;
+}
+
+
+.msg{
+    margin: 35px 8px;
+    max-width: 40%;
+    border-radius: 5px;
+    padding-right: 22px;
+}
+.right{
+    background-color: rgb(200, 105, 168);
+    color: white;
+    font-weight: 600;
+    margin-left: auto;
+}
+.left{
+    background-color: rgb(73, 156, 171);
+    color: white;
+    font-weight: 600;
+}
+.msg h6{
+    position: relative;
+    top:-18px;
+    left:5px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    font:600;
+    color: rgb(80, 77, 77);
+}
+.msg p{
+    position: relative;
+    bottom: 15px;
+    left: 15px;
+}
+.msginfo p{
+    max-width: 50%;
+    font-weight: 700;
+    margin: 10px auto;
+    text-align: center;
+}
+.red{
+    color: rgb(143, 87, 87);
+}
+.green{
+    color: rgb(92, 145, 92);
+}
+
+ /* ------------------------------------------------------------ */
+
+.msgtake{
+    display:flex;
+}
+.msginput{
+    width: 800px;
+    height: 40px;
+    margin: 10px;
+    border: 2px solid rgb(200, 0, 255) ;
+    border-radius: 5px;
+    resize: none;
+}
+#bttn{
+    margin: auto;
+    padding-bottom: 10px;
+    transform: translateX(10px);
+    height: 30px;
+    width: 90px;
+    background-color: rgb(189, 44, 251);
+    color: aliceblue;
+    border-radius: 5px;
+    box-shadow: 2px 1.5px 1px rgb(54, 1, 75);
+    font-weight: 700;
+}
+
+/* ------------------------------------------------------------------ */
+
+.hidePeople{
+    background-color: rgb(154, 55, 200);
+    display:none;
+}
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------ */
+
+@media screen and (max-width:980px){
+    header{
+        display:none;
+    }
+    .onlineInfo{
+        display:none;
+    }
+    .hidePeople{
+        display:block;
+    }
+    nav img{
+        width:12%;
+    }
+    main{
+        height:100vh;
+    }
+    #bttn{
+        margin-right: 10px;
+        margin-top: 12px;
+    }
+    .msginside{
+        padding: 0px 0px 20px 0px;
+        border-radius: 0px;
+        border:0px;
+        margin:0px;
+    }
+    .msgbox{
+        padding-top: 0px;
+        height:100%;
+    }
+    @media screen and (max-width:450px){
+        .chatbox{
+            height:100%;
+        }
+        .msginside{
+            height: 93%;
+        }
+        .msgbox{
+            margin-top: 0px;
+        }
+        .msginput{
+            margin:10px 0px 0px 0px;
+        }
+        .msg{
+            max-width:60%;
+        }
+    }
+}
