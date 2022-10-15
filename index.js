@@ -1,18 +1,18 @@
 const express = require('express');
 const path = require('path');
 
+let port = process.env.PORT || 1234;
+
 const app=express();
-const http = require('http').createServer(app)
+const http = require('http').createServer(app);
 
-const drpath = path.join(__dirname,'public');
-
-app.use(express.static(drpath));
+app.use(express.static(__dirname));
 
 app.get('/',(req,res)=>{
     res.sendFile(`${__dirname}/index.html`);
 })
 
-http.listen(3000);
+http.listen(port);
 
 
 
