@@ -198,6 +198,9 @@ main{
 /* ------------------------------------------------------------------------ */
 
 @media screen and (max-width:980px){
+    main{
+        background-image: linear-gradient(rgb(154, 55, 200),rgb(154, 55, 200));
+    }
     header{
         display:none;
     }
