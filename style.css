@@ -232,16 +232,20 @@ main{
             height:100%;
         }
         .msginside{
-            height: 93%;
+            height: 90%;
         }
         .msgbox{
             margin-top: 0px;
+            border: 0px;
         }
         .msginput{
             margin:10px 0px 0px 0px;
         }
         .msg{
             max-width:60%;
+        }
+        .container{
+            --bs-gutter-x: 10px;
         }
     }
 }
